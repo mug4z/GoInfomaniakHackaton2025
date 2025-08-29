@@ -1088,3 +1088,80 @@ emails.0
 [2025-08-29T18:03:59.959     INFO function=startup      L0080 file=basereload.p] Started reloader process [69122] using WatchFiles
 [2025-08-29T18:04:33.885     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [69122]
 [2025-08-29T18:04:33.885     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [69122]
+[2025-08-29T09:13:39.306     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T09:13:39.306     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T09:13:39.306     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T09:13:39.306     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T09:13:39.306     INFO function=startup      L0080 file=basereload.p] Started reloader process [14093] using WatchFiles
+[2025-08-29T09:13:39.306     INFO function=startup      L0080 file=basereload.p] Started reloader process [14093] using WatchFiles
+[2025-08-29T09:13:40.082     INFO function=_serve       L0084 file=server.py   ] Started server process [14099]
+[2025-08-29T09:13:40.082     INFO function=_serve       L0084 file=server.py   ] Started server process [14099]
+[2025-08-29T09:13:40.082     INFO function=startup      L0048 file=on.py       ] Waiting for application startup.
+[2025-08-29T09:13:40.082     INFO function=startup      L0048 file=on.py       ] Waiting for application startup.
+[2025-08-29T09:13:40.082     INFO function=startup      L0062 file=on.py       ] Application startup complete.
+[2025-08-29T09:13:40.082     INFO function=startup      L0062 file=on.py       ] Application startup complete.
+[2025-08-29T09:14:05.523     INFO function=event_sugges L0100 file=mail.py     ] Request for mailbox uuid: 014f5fe1-1418-389c-bf95-481bc528df26
+[2025-08-29T09:14:05.697     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/4?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:14:05.700     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/13?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:14:05.701     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJwLTs0rAQADzwGb/message/1?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:14:08.588     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:14:08.895     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:14:08.895     INFO function=send         L0476 file=httptools_im] 127.0.0.1:52476 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:14:08.895     INFO function=send         L0476 file=httptools_im] 127.0.0.1:52476 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:14:08.896     INFO function=event_sugges L0100 file=mail.py     ] Request for mailbox uuid: 014f5fe1-1418-389c-bf95-481bc528df26
+[2025-08-29T09:14:09.063     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/4?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:14:09.063     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJwLTs0rAQADzwGb/message/1?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:14:09.066     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/13?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:14:11.864     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:14:12.129     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:14:12.130    ERROR function=correct_json L0075 file=mail.py     ] Error parsing JSON: 'AIMessage' object has no attribute 'strip'. Using fallback values.
+[2025-08-29T09:14:12.130     INFO function=send         L0476 file=httptools_im] 127.0.0.1:52490 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:14:12.130     INFO function=send         L0476 file=httptools_im] 127.0.0.1:52490 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:14:39.695     INFO function=shutdown     L0264 file=server.py   ] Shutting down
+[2025-08-29T09:14:39.695     INFO function=shutdown     L0264 file=server.py   ] Shutting down
+[2025-08-29T09:14:39.795     INFO function=shutdown     L0067 file=on.py       ] Waiting for application shutdown.
+[2025-08-29T09:14:39.795     INFO function=shutdown     L0067 file=on.py       ] Waiting for application shutdown.
+[2025-08-29T09:14:39.796     INFO function=shutdown     L0076 file=on.py       ] Application shutdown complete.
+[2025-08-29T09:14:39.796     INFO function=shutdown     L0076 file=on.py       ] Application shutdown complete.
+[2025-08-29T09:14:39.796     INFO function=_serve       L0094 file=server.py   ] Finished server process [14099]
+[2025-08-29T09:14:39.796     INFO function=_serve       L0094 file=server.py   ] Finished server process [14099]
+[2025-08-29T09:14:39.800     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [14093]
+[2025-08-29T09:14:39.800     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [14093]
+[2025-08-29T09:15:53.174     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T09:15:53.174     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T09:15:53.174     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T09:15:53.174     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T09:15:53.174     INFO function=startup      L0080 file=basereload.p] Started reloader process [14374] using WatchFiles
+[2025-08-29T09:15:53.174     INFO function=startup      L0080 file=basereload.p] Started reloader process [14374] using WatchFiles
+[2025-08-29T09:15:53.955     INFO function=_serve       L0084 file=server.py   ] Started server process [14380]
+[2025-08-29T09:15:53.955     INFO function=_serve       L0084 file=server.py   ] Started server process [14380]
+[2025-08-29T09:15:53.955     INFO function=startup      L0048 file=on.py       ] Waiting for application startup.
+[2025-08-29T09:15:53.955     INFO function=startup      L0048 file=on.py       ] Waiting for application startup.
+[2025-08-29T09:15:53.955     INFO function=startup      L0062 file=on.py       ] Application startup complete.
+[2025-08-29T09:15:53.955     INFO function=startup      L0062 file=on.py       ] Application startup complete.
+[2025-08-29T09:16:07.338     INFO function=event_sugges L0100 file=mail.py     ] Request for mailbox uuid: 014f5fe1-1418-389c-bf95-481bc528df26
+[2025-08-29T09:16:07.494     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/13?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:16:07.495     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJwLTs0rAQADzwGb/message/1?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:16:07.498     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/4?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:16:10.243     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:16:10.653     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:16:10.654     INFO function=send         L0476 file=httptools_im] 127.0.0.1:38982 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:16:10.654     INFO function=send         L0476 file=httptools_im] 127.0.0.1:38982 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:16:36.704     INFO function=event_sugges L0100 file=mail.py     ] Request for mailbox uuid: 014f5fe1-1418-389c-bf95-481bc528df26
+[2025-08-29T09:16:36.869     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJwLTs0rAQADzwGb/message/1?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:16:36.887     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/4?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:16:36.890     INFO function=_send_single L1740 file=_client.py  ] HTTP Request: GET https://mail.infomaniak.com/api/mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/message/13?prefered_format=plain "HTTP/1.1 200 OK"
+[2025-08-29T09:16:39.791     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:16:40.635     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-08-29T09:16:40.636     INFO function=send         L0476 file=httptools_im] 127.0.0.1:34718 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:16:40.636     INFO function=send         L0476 file=httptools_im] 127.0.0.1:34718 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T09:16:57.171     INFO function=shutdown     L0264 file=server.py   ] Shutting down
+[2025-08-29T09:16:57.171     INFO function=shutdown     L0264 file=server.py   ] Shutting down
+[2025-08-29T09:16:57.272     INFO function=shutdown     L0067 file=on.py       ] Waiting for application shutdown.
+[2025-08-29T09:16:57.272     INFO function=shutdown     L0067 file=on.py       ] Waiting for application shutdown.
+[2025-08-29T09:16:57.272     INFO function=shutdown     L0076 file=on.py       ] Application shutdown complete.
+[2025-08-29T09:16:57.272     INFO function=shutdown     L0076 file=on.py       ] Application shutdown complete.
+[2025-08-29T09:16:57.272     INFO function=_serve       L0094 file=server.py   ] Finished server process [14380]
+[2025-08-29T09:16:57.272     INFO function=_serve       L0094 file=server.py   ] Finished server process [14380]
+[2025-08-29T09:16:57.277     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [14374]
+[2025-08-29T09:16:57.277     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [14374]

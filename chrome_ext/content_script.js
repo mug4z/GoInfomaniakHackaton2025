@@ -7,21 +7,47 @@
     // Constants
     const CONFIG = {
         buttonId: "event_api_call",
-        buttonHtml: `
-      <button type="button" id="event_api_call" class="mat-focus-indicator mailFooter-button mat-raised-button mat-button-base ng-star-inserted">
-        <span class="mat-button-wrapper">
-          <div>
+            buttonHtml: `
+        <style>
+            #event_api_call {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                border: none;
+                border-radius: 8px;
+                color: white;
+                padding: 10px 16px;
+                font-size: 14px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+            #event_api_call:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+                background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+            }
+            #event_api_call:active {
+                transform: translateY(0);
+                box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3);
+            }
+            #event_api_call .icon {
+                font-size: 16px;
+            }
+            #event_api_call .button-text {
+                font-weight: 600;
+            }
+        </style>
+        <button type="button" id="event_api_call">
             <i class="icon icon-magic-wand-outline"></i>
-            <p class="d-none d-lg-block d-xl-block threadContent--dateMail">Disclaimer</p>
-          </div>
-        </span>
-        <span class="mat-ripple mat-button-ripple"></span>
-        <span class="mat-button-focus-overlay"></span>
-      </button>
+            <span class="button-text">✨ Analyse des mails disclaimer</span>
+        </button>
     `,
-        calendarBaseUrl: "https://calendar.infomaniak.com/create",
+        // calendarBaseUrl: "https://calendar.infomaniak.com/create",
         mailPattern: /mail-(\d+)@([a-zA-Z0-9-]+)/g,
-        targetSelector: "div.mailContent-open-footer.ng-star-inserted",
+        targetSelector: "div.mail-toolbar__right.ng-star-inserted",
         messageItemSelector: "div.message-item",
     };
 
