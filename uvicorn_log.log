@@ -1056,3 +1056,35 @@ emails.0
 [2025-08-29T16:41:19.592     INFO function=_send_single L1025 file=_client.py  ] HTTP Request: POST https://api.infomaniak.com/2/ai/105923/openai/v1/chat/completions "HTTP/1.1 200 OK"
 [2025-08-29T16:41:19.592     INFO function=send         L0476 file=httptools_im] 127.0.0.1:54042 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
 [2025-08-29T16:41:19.592     INFO function=send         L0476 file=httptools_im] 127.0.0.1:54042 - "POST /mail/014f5fe1-1418-389c-bf95-481bc528df26/folder/eJzz9HPyjwAABGYBgQ--/thread/13/event_suggestion HTTP/1.1" 200
+[2025-08-29T18:01:30.633     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:01:30.633     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:01:30.633     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:01:30.633     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:01:30.634     INFO function=startup      L0080 file=basereload.p] Started reloader process [68279] using WatchFiles
+[2025-08-29T18:01:30.634     INFO function=startup      L0080 file=basereload.p] Started reloader process [68279] using WatchFiles
+[2025-08-29T18:02:02.382     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [68279]
+[2025-08-29T18:02:02.382     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [68279]
+[2025-08-29T18:02:14.256     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:02:14.256     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:02:14.256     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:02:14.256     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:02:14.256     INFO function=startup      L0080 file=basereload.p] Started reloader process [68567] using WatchFiles
+[2025-08-29T18:02:14.256     INFO function=startup      L0080 file=basereload.p] Started reloader process [68567] using WatchFiles
+[2025-08-29T18:03:13.245     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [68567]
+[2025-08-29T18:03:13.245     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [68567]
+[2025-08-29T18:03:14.730     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:03:14.730     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:03:14.730     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:03:14.730     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:03:14.730     INFO function=startup      L0080 file=basereload.p] Started reloader process [68972] using WatchFiles
+[2025-08-29T18:03:14.730     INFO function=startup      L0080 file=basereload.p] Started reloader process [68972] using WatchFiles
+[2025-08-29T18:03:40.835     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [68972]
+[2025-08-29T18:03:40.835     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [68972]
+[2025-08-29T18:03:59.959     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:03:59.959     INFO function=__init__     L0319 file=config.py   ] Will watch for changes in these directories: ['/home/syl/42/GoInfomaniak/api', '/home/syl/42/GoInfomaniak/common']
+[2025-08-29T18:03:59.959     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:03:59.959     INFO function=bind_socket  L0525 file=config.py   ] Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+[2025-08-29T18:03:59.959     INFO function=startup      L0080 file=basereload.p] Started reloader process [69122] using WatchFiles
+[2025-08-29T18:03:59.959     INFO function=startup      L0080 file=basereload.p] Started reloader process [69122] using WatchFiles
+[2025-08-29T18:04:33.885     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [69122]
+[2025-08-29T18:04:33.885     INFO function=shutdown     L0116 file=basereload.p] Stopping reloader process [69122]
