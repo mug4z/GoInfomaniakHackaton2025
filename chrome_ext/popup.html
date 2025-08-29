@@ -1,51 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Custom Extension</title>
-        <script type="module" src="popup.js" defer></script>
-        <style>
-            body {
-                width: 280px;
-                padding: 15px;
-                font-family: 'Arial', sans-serif;
-                background: #f9f9f9;
-                text-align: center;
-            }
-            h3 {
-                color: #009688;
-                margin-bottom: 10px;
-            }
-            p {
-                font-size: 13px;
-                color: #555;
-            }
-            button {
-                margin: 10px 5px;
-                padding: 10px 15px;
-                background: #009688;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-            button:hover {
-                background: #00796b;
-            }
-            .footer {
-                font-size: 11px;
-                color: #888;
-                margin-top: 20px;
-            }
-        </style>
-    </head>
-    <body>
-        <h3>⚡ Euria Boost</h3>
-        <p>Améliore ton KSuite avec des outils intelligents et durables.</p>
-        <button id="custom-btn">Custom l’interface</button>
-        <div class="footer">
-            Développé lors du hackathon Infomaniak 🇨🇭<br>
-            100% local, privé, durable.
-        </div>
-    </body>
+<html>
+<head>
+    <title>Mail Conversion Extraction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            width: 580px; /* Adjust width to fit within the popup */
+        }
+
+        #content {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            width: 100%; /* Ensure it takes full width of the body */
+        }
+
+        #urls {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            height: 100px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            width: 100%; /* Ensure it takes full width of the body */
+        }
+    </style>
+</head>
+<body>
+<h1>Settings</h1>
+<label for="tokenInput">Enter API <a href="https://manager.infomaniak.com/v3/28/ng/profile/user/token/list">Token with
+    scope (workspace:mail, workspace:calendar):</a></label>
+<input type="password" id="tokenInput" placeholder="Enter your API token"/>
+<button id="saveTokenButton">Save Token</button>
+<h2>Usage Instructions</h2>
+<ol>
+    <li>Go to <a href="https://mail.infomaniak.com" target="_blank">Infomaniak Mail</a></li>
+    <li>Select a conversation</li>
+    <li>Expand all messages in the conversation</li>
+    <li>Click on the <strong>Get IDs</strong> button to retrieve the URL template and JSON body</li>
+</ol>
+<h2>Get Conversation json payload</h2>
+<button id="showContent">Get IDs</button>
+<br>
+<h3>Url template</h3>
+<pre id="urls"></pre>
+<br>
+<h3>Json payload</h3>
+<pre id="content"></pre>
+<script type="module" src="popup.js"></script>
+</body>
 </html>
