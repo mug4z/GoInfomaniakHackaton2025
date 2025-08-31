@@ -1,1 +1,0 @@
-# GoInfomaniakHackaton2025
