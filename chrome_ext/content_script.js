@@ -21,7 +21,7 @@
     `,
         calendarBaseUrl: "https://calendar.infomaniak.com/create",
         mailPattern: /mail-(\d+)@([a-zA-Z0-9-]+)/g,
-        targetSelector: "responsive-toolbar__list responsive-toolbar__list--grow",
+        targetSelector: "mail-toolbar__right ng-star-inserted",
         messageItemSelector: "div.message-item",
     };
 
@@ -185,4 +185,5 @@
 
         return false; // not handled
     });
+
 })();
