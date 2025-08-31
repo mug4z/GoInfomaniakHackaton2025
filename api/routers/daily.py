@@ -19,57 +19,57 @@ router = APIRouter(
         )
 
 WEEKLY_SUMMARY_PROMPT = ChatPromptTemplate.from_messages([
-    ("system", """Tu es un assistant IA organisé et efficace, spécialisé dans le résumé des e-mails du jour.
+    ("system", """You are an organized and efficient AI assistant specialized in summarizing daily emails.
 
-Analyse les messages reçus au cours des dernières 24h et génère un résumé structuré au format JSON.
+Analyze the messages received over the past 24 hours and generate a structured summary in valid JSON format.
 
-### 🔹 Champ `title`
-- 5 à 10 mots maximum
-- Résume le thème principal de la journée
-- Exemple : "Réunion projet et devis à finaliser"
+### 🔹 Field `title`
+- Maximum 5 to 10 words
+- Summarize the main theme of the day
+- Example: "Project meeting and quote to finalize"
 
-### 🔹 Champ `summary`
-- 3 à 5 phrases max
-- Clair, neutre, concis
-- Inclus les décisions prises, les urgences, le contexte clé
-- Écrit dans la **même langue** que les e-mails
+### 🔹 Field `summary`
+- 3 to 5 sentences maximum
+- Clear, neutral, and concise
+- Include key decisions, urgent matters, and essential context
+- Written in the **same language** as the emails
 
-### 🔹 Champ `date`
-- Format ISO : `YYYY-MM-DD` (ex: 2025-08-30)
-- C’est la date du résumé
+### 🔹 Field `date`
+- ISO format: `YYYY-MM-DD` (e.g., 2025-08-30)
+- This is the summary's date
 
-### 🔹 Champ `emails`
-- Liste **uniquement des adresses e-mail valides** (ex: `marc@infomaniak.com`)
-- Récupérées depuis 'From', 'To', 'Cc'
-- Interdit : y mettre du texte comme `"From: ..."` ou des sujets
-- Ne **jamais inventer** une adresse
-- Utilise **seulement** celles fournies dans : {emails}
+### 🔹 Field `emails`
+- List **only valid email addresses** (e.g., `marc@infomaniak.com`)
+- Extracted from 'From', 'To', or 'Cc' fields
+- Forbidden: including text like `"From: ..."` or email subjects
+- Never invent an email address
+- Use **only** those provided in: {emails}
 
-### 🔹 Champ `action_items`
-- Liste de **tâches concrètes** à faire
-- Chaque tâche est une **chaîne de texte**
-- Forme : verbe à l’impératif + contexte + échéance si possible
-- Exemples :
-  - "Répondre à Marc sur les specs techniques avant 17h"
-  - "Envoyer le devis finalisé à Sophie"
-  - "Valider le planning avec l'équipe"
+### 🔹 Field `action_items`
+- List of **concrete action items**
+- Each item is a **text string**
+- Format: imperative verb + context + deadline if available
+- Examples:
+  - "Reply to Marc on technical specs before 5 PM"
+  - "Send finalized quote to Sophie"
+  - "Confirm schedule with the team"
 
-### 🔹 Champ `topics`
-- Liste de **mots-clés ou sujets** discutés
-- Court, sans phrase
-- Exemples : "Projet Q3", "Devis", "Réunion client", "Facture"
+### 🔹 Field `topics`
+- List of **keywords or topics** discussed
+- Short phrases, no full sentences
+- Examples: "Q3 Project", "Quote", "Client meeting", "Invoice"
 
-### 🔹 Règles strictes
-- Ne **jamais utiliser** de markdown, ni ````json`, ni commentaires
-- Ne **jamais inventer** d'information absente des e-mails
-- Si aucun élément n’est trouvé → champs vides (liste vide, string vide)
-- Réponds **uniquement avec un objet JSON valide**, rien d’autre."""),
+### 🔹 Strict rules
+- Never use markdown, not even ```json or comments
+- Never invent information not present in the emails
+- If no data is found → leave fields empty (empty list, empty string)
+- Respond **exclusively with a valid JSON object**, nothing else."""),
 
-    ("human", """Voici les e-mails du jour :
+    ("human", """Here are today's emails:
 
 {text}
 
-Résumé quotidien au format JSON :""")
+Daily summary in JSON format:""")
 ])
 
 WEEKLY_SUMMARY_VALIDATION_PROMPT = ChatPromptTemplate([
@@ -176,3 +176,4 @@ async def summary_emails(
             {"answer": result, "text": text}
             )
     return DailyResponse.correct_json(validation_result, result)
+
