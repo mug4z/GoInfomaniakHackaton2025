@@ -6,29 +6,16 @@
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
-            width: 580px; /* Adjust width to fit within the popup */
+            width: 500px;
         }
 
         #content {
-            white-space: pre-wrap;
             word-wrap: break-word;
-            height: 300px;
+            height: 3rem;
             overflow-y: auto;
-            border: 1px solid #ccc;
             padding: 10px;
             background-color: #f9f9f9;
-            width: 100%; /* Ensure it takes full width of the body */
-        }
-
-        #urls {
-            white-space: pre-wrap;
-            word-wrap: break-word;
-            height: 100px;
-            overflow-y: auto;
-            border: 1px solid #ccc;
-            padding: 10px;
-            background-color: #f9f9f9;
-            width: 100%; /* Ensure it takes full width of the body */
+            width: 100%;
         }
     </style>
 </head>
@@ -42,17 +29,13 @@
 <ol>
     <li>Go to <a href="https://mail.infomaniak.com" target="_blank">Infomaniak Mail</a></li>
     <li>Select a conversation</li>
-    <li>Expand all messages in the conversation</li>
-    <li>Click on the <strong>Get IDs</strong> button to retrieve the URL template and JSON body</li>
+    <li>Click on the <strong>Show Daily Summary</strong> button to process a daily summary</li>
 </ol>
-<h2>Get Conversation json payload</h2>
-<button id="showContent">Get IDs</button>
+<h2>Custom Extension</h2>
 <br>
-<h3>Url template</h3>
-<pre id="urls"></pre>
+<button id="showDaily">Show Daily Summary</button>
 <br>
-<h3>Json payload</h3>
-<pre id="content"></pre>
+<p id="content"></p>
 <script type="module" src="popup.js"></script>
 </body>
 </html>
