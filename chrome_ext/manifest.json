@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Message Item Extractor",
+  "version": "1.0",
+  "description": "Extracts all div elements with the class 'message-item' from the current page.",
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": [
+        "https://mail.infomaniak.com/*",
+        "https://ksuite.infomaniak.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://mail.infomaniak.com/*",
+    "https://ksuite.infomaniak.com/*",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_width": 600,
+    "default_height": 400,
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
